@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加资产管理</title>
+</head>
+<style type="text/css">
+    body{
+        display: flex;
+    }
+    form {
+        margin: auto;
+    }
+
+    .box {
+        padding: 10px;
+    }
+    label{
+        width: 100px;
+        display: inline-block;
+    }
+    input{
+        width: 200px;
+    }
+    input[type='submit']{
+        background: cornflowerblue;
+        border: none;
+        color: #fff;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <form action="action-add.php" method="post">
+        <h2 style="text-align: center;">添加资产管理</h2>
+        <div class="box">
+            <label>资产编码：</label><input type="text" name="code">
+        </div>
+        <div class="box">
+            <label>资产名称：</label><input type="text" name="goods">
+        </div>
+        <div class="box">
+            <label>资产负责人：</label><input type="text" name="owner">
+        </div>
+        <div class="box">
+            <label>资产负责部门：</label><input type="text" name="department">
+        </div>
+        <div class="box">
+            <label>资产数量：</label><input type="number" name="assetsNum">
+        </div>
+        <div class="box">
+            <label>资产单位：</label><input type="text" name="unit">
+        </div>
+        <!-- <div class="box">
+            <label>资产二维码：</label><input type="text" name="qrcode">
+        </div> -->
+        <div class="box">
+            <label>发布时间：</label><input type="date" name="inventoryDate">
+        </div>
+        <div class="box" style="text-align: center;">
+            <input type="submit" value="添加资产">
+        </div>
+    </form>
+</body>
+
+</html>
